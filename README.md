@@ -4,7 +4,9 @@
 
 My name is Isaiah, and I have both a professional and personal passion for information technology. That passion has led me to design, build, and continually improve my own home network and server environment as a place to learn, experiment, and solve real problems.
 
-Along the way, I've gained hands-on experience with networking, Linux administration, virtualization, firewalls, containers, monitoring, automation, and self-hosted services. This portfolio documents that journey—not just the technologies I've used, but the problems I was trying to solve, the decisions I made, and how the environment has evolved as my skills have grown.
+As a husband and father of three, while balancing a full-time career as a Network Engineer and service in the Alabama National Guard, my free time is valuable. I choose to spend much of it learning, experimenting, and building this homelab because I genuinely enjoy working with technology and continuing to develop my skills.
+
+Along the way, I've gained hands-on experience with networking, Linux administration, virtualization, firewalls, containers, monitoring, automation, and self-hosted services. This portfolio documents that journey, not just the technologies I've used, but the problems I was trying to solve, the decisions I made, and how the environment has evolved as my skills have grown.
 
 ---
 
