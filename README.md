@@ -29,7 +29,6 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
 ---
 
 ## Current Environment
-...
 
 <p align="center">
   <img src="images/home-assistant-dashboard-mobile.png"
