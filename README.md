@@ -31,4 +31,15 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
 ## Current Environment
 ...
 
-<img width="1080" height="2063" alt="Untitled" src="https://github.com/user-attachments/assets/d7b003a2-b911-4ae1-bfad-90c7b3c46dd5" />
+<p align="center">
+  <img src="images/home-assistant-dashboard-mobile.png"
+       alt="Home Assistant homelab management dashboard"
+       width="500">
+</p>
+
+<p align="center">
+  <em>
+    A custom Home Assistant dashboard I built to centralize server management,
+    monitoring, and access to core homelab services.
+  </em>
+</p>
