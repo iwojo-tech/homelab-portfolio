@@ -19,12 +19,12 @@ Because AdGuard Home provides DNS for the network, I treated the upgrade as a cr
   </tr>
   <tr>
     <td align="center">
-      <img src="../images/adguardhome-prebeta.png"
+      <img src="../images/adguardhome-prebeta-redacted.png"
            alt="AdGuard Home dashboard before upgrade on v0.107.79"
            width="440">
     </td>
     <td align="center">
-      <img src="../images/adguardhomev1_0-beta.png"
+      <img src="../images/adguardhomev1_0-beta-redacted.png"
            alt="AdGuard Home dashboard after upgrade on v1.0.0-b.1"
            width="440">
     </td>
