@@ -338,34 +338,32 @@ The new v1.0 interface displayed the existing historical data immediately after 
 
 ## Dashboard Comparison
 
-### Before Upgrade — AdGuard Home v0.107.79
-
-<p align="center">
-  <img src="images/adguardhome-prebeta.png"
-       alt="AdGuard Home dashboard before upgrade on v0.107.79"
-       width="900">
-</p>
-
-<p align="center">
-  <em>
-    AdGuard Home running on v0.107.79 before the beta upgrade.
-  </em>
-</p>
-
-### After Upgrade — AdGuard Home v1.0.0-b.1
-
-<p align="center">
-  <img src="images/adguardhomev1_0 beta.png"
-       alt="AdGuard Home dashboard after upgrade on v1.0.0-b.1"
-       width="900">
-</p>
-
-<p align="center">
-  <em>
-    AdGuard Home running on v1.0.0-b.1 after the successful upgrade,
-    with the existing DNS configuration, statistics, clients, and filtering settings preserved.
-  </em>
-</p>
+<table>
+  <tr>
+    <th>Before — AdGuard Home v0.107.79</th>
+    <th>After — AdGuard Home v1.0.0-b.1</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../images/adguardhome-prebeta.png"
+           alt="AdGuard Home dashboard before upgrade on v0.107.79"
+           width="440">
+    </td>
+    <td align="center">
+      <img src="../images/adguardhomev1_0-beta.png"
+           alt="AdGuard Home dashboard after upgrade on v1.0.0-b.1"
+           width="440">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <em>Original v0.107.79 dashboard.</em>
+    </td>
+    <td align="center">
+      <em>New v1.0.0-b.1 dashboard with the existing configuration preserved.</em>
+    </td>
+  </tr>
+</table>
 ---
 
 ## Lessons Learned
