@@ -1,20 +1,12 @@
 # Homelab Evolution
 
-## From Blocking Ads to Building Infrastructure
+This page documents how my homelab has evolved over time, from a simple DNS-filtering setup into a broader environment for networking, Linux, self-hosting, virtualization, monitoring, automation, and infrastructure management.
 
-My homelab did not begin as an attempt to build an enterprise environment.
-
-It started with a simple problem: like many people, I was tired of seeing ads everywhere—especially on my children's devices. I wanted a way to block ads across my entire home network without relying entirely on cloud-based services.
-
-What started as a repurposed laptop running Pi-hole for network-wide ad blocking through DNS filtering gradually evolved into an environment for experimenting with managed networking, Linux, self-hosting, firewalls, Docker, virtualization, monitoring, remote access, security, and automation.
-
-Each stage of the lab has been driven by one of three things:
+Each stage was driven by one of three things:
 
 - A problem I wanted to solve
 - Something new I wanted to learn
 - A limitation I discovered in the previous design
-
-This page documents that evolution.
 
 ---
 
