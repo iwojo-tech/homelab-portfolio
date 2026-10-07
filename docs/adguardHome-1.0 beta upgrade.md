@@ -1,4 +1,4 @@
-# AdGuard Home v1.0 Beta Upgrade
+# AdGuard Home v1.0 Beta Migration
 
 ## Overview
 
