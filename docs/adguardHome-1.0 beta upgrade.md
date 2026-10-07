@@ -2,19 +2,51 @@
 
 ## Overview
 
-I upgraded my AdGuard Home instance from:
+I upgraded my AdGuard Home instance from `v0.107.79` to `v1.0.0-b.1` on a Debian LXC running under Proxmox.
 
-- AdGuard Home `v0.107.79`
-- Debian LXC running on Proxmox
-- Standalone installation in `/opt/AdGuardHome`
+The goal was to test the new AdGuard Home 1.0 beta while preserving the existing DNS configuration, filtering rules, statistics, client history, and administrative settings.
 
-to:
+Because AdGuard Home provides DNS for the network, I treated the upgrade as a critical infrastructure change and created rollback options before making changes.
 
-- AdGuard Home `v1.0.0-b.1`
+---
 
-The goal was to test the new AdGuard Home 1.0 beta while preserving my existing DNS configuration, filtering rules, statistics, client history, and administrative settings.
+## Dashboard Comparison
 
-Because AdGuard Home provides DNS for the network, I treated the upgrade as a change to critical infrastructure and created rollback options before making changes.
+<table>
+  <tr>
+    <th>Before — AdGuard Home v0.107.79</th>
+    <th>After — AdGuard Home v1.0.0-b.1</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../images/adguardhome-prebeta.png"
+           alt="AdGuard Home dashboard before upgrade on v0.107.79"
+           width="440">
+    </td>
+    <td align="center">
+      <img src="../images/adguardhomev1_0-beta.png"
+           alt="AdGuard Home dashboard after upgrade on v1.0.0-b.1"
+           width="440">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <em>Original v0.107.79 dashboard.</em>
+    </td>
+    <td align="center">
+      <em>New v1.0.0-b.1 dashboard with the existing configuration and history preserved.</em>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Environment
+
+- Proxmox VE
+- Debian LXC
+- AdGuard Home
+- Installation path: `/opt/AdGuardHome`
 
 ---
 
