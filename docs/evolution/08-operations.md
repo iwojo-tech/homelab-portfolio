@@ -1,4 +1,4 @@
-# Era 8 of 9 — Operating Infrastructure
+# Era 8 — Operating Infrastructure
 
 **Beszel · Healthchecks.io · Tailscale · SSH · Backups · Automation**
 
