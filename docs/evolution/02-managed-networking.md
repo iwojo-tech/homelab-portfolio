@@ -8,7 +8,7 @@ As I began working in networking, I wanted a safe place at home to practice on e
 I replaced the unmanaged switch with a managed Cisco switch. The goal at this stage was to work directly with the switch, not to build a fully segmented enterprise network.
 
 ## What changed
-- I used Cisco IOS to inspect and configure the switch.
+- I used the Cisco CLI to inspect and configure the switch.
 - I enabled SSH for remote administration and practiced device hardening.
 - I monitored interfaces and used the equipment to reinforce troubleshooting habits.
 
