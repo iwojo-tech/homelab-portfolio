@@ -1,4 +1,4 @@
-# Era 6 of 9 — Bringing Enterprise Networking Home
+# Era 6 — Bringing Enterprise Networking Home
 
 **FortiGate 61F · Cisco switching · VLANs · Firewall policy**
 
