@@ -1,4 +1,4 @@
-# Era 4 of 9 — Discovering Self-Hosting
+# Era 4 — Discovering Self-Hosting
 
 **Ubuntu Server · AdGuard Home · Docker Compose · Home Assistant**
 
