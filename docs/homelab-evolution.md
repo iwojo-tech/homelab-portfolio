@@ -1,5 +1,7 @@
 # Homelab Evolution
 
+[Explore the evolution as a sequence of short slide pages →](evolution/README.md)
+
 This page documents how my homelab has evolved over time, from a simple DNS-filtering setup into a broader environment for networking, Linux, self-hosting, virtualization, monitoring, automation, and infrastructure management.
 
 Each stage was driven by one of three things:
