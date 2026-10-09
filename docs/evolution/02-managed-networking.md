@@ -1,4 +1,4 @@
-# Era 2 of 9 — Learning Managed Networking
+# Era 2 — Learning Managed Networking
 
 **Cisco switching · IOS · SSH · Device hardening**
 
