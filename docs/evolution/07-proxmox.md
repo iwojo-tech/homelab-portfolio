@@ -1,4 +1,4 @@
-# Era 7 of 9 — Moving to Virtualized Infrastructure
+# Era 7 — Moving to Virtualized Infrastructure
 
 **HPE ProLiant · Proxmox VE · ZFS · KVM/QEMU · LXC**
 
