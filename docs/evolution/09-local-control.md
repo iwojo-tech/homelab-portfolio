@@ -1,4 +1,4 @@
-# Era 9 of 9 — Local Control, Segmentation, and Automation
+# Era 9 — Local Control, Segmentation, and Automation
 
 **Home Assistant · IoT · Local-first design · Future improvements**
 
