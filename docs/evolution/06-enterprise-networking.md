@@ -14,7 +14,7 @@ This was not my first introduction to VLANs, routing, or firewall concepts. It w
 - I could test and troubleshoot changes end to end, from a client or server through the switch and firewall.
 
 ## Skills Applied & Developed
-- **Applied and reinforced:** Cisco switching, VLANs, routing, network segmentation, firewall policies, and troubleshooting.
+- **Applied and reinforced:** switching, VLANs, routing, network segmentation, firewall policies, and troubleshooting.
 - **Expanded:** Hands-on FortiGate administration and making design tradeoffs for my own environment rather than following an existing production design.
 
 > 📷 **Image placeholder:** Sanitized network topology showing the FortiGate, Cisco switch, and major network segments.
