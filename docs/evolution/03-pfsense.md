@@ -1,24 +1,27 @@
 # Era 3 of 9 — Building My Own Network Edge
 
-**pfSense · Routing · Firewalling · NAT**
+**pfSense · Routing · Firewall policy · NAT**
 
 ## The next problem
-After learning that pfSense could run on repurposed hardware, I saw a way to experiment with a more capable firewall without buying a dedicated appliance.
+When I discovered that pfSense could run on repurposed hardware, I saw an affordable way to experiment with controlling my own network edge.
 
 I converted another older Windows laptop into a pfSense firewall and router.
 
 ## What changed
-The lab moved beyond switching and DNS filtering. I could now configure and troubleshoot the systems that direct and control network traffic.
+I could now configure and troubleshoot the systems that directed and controlled traffic entering and leaving the home network.
 
 - Routing and DHCP
-- Firewall rules and NAT
-- Network edge administration
+- Firewall policies and NAT
+- Hands-on administration of a firewall platform outside my day-to-day work
 
-## What I learned
-**Routing · Firewall policy · NAT · DHCP · Network security · Infrastructure troubleshooting**
+## Skills Applied & Developed
+- **Applied:** Existing routing, IP addressing, network security, and troubleshooting knowledge.
+- **Expanded:** Hands-on pfSense configuration, firewall rule management, DHCP, and NAT on personally managed hardware.
+
+> 📷 **Image placeholder:** Sanitized pfSense dashboard or a simple diagram of the laptop firewall at the network edge.
 
 ## Why the lab grew
-Once I had more control over the network, I started looking for other services and infrastructure I could operate myself.
+With greater control of the network, I started looking for additional services I could host and maintain myself.
 
 **Previous:** [Era 2 — Learning Managed Networking](02-managed-networking.md)  
 **Next:** [Era 4 — Discovering Self-Hosting →](04-self-hosting.md)
