@@ -1,4 +1,4 @@
-# Era 1 of 9 — Taking Control of DNS
+# Era 1 — Taking Control of DNS
 
 **Pi-hole · Linux · DNS filtering · Repurposed hardware**
 
