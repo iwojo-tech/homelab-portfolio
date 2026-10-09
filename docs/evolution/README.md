@@ -2,13 +2,7 @@
 
 My homelab has evolved from a single laptop running Pi-hole into a virtualized and segmented environment for networking, self-hosting, monitoring, automation, and experimentation.
 
-While the technology has changed considerably over time, each stage of its evolution has been driven by one of three things:
-
-- **A problem I wanted to solve**
-- **Something new I wanted to learn**
-- **A limitation I discovered in the previous design**
-
-Each era represents another step in that journey, documenting not just the technologies I've worked with, but why I introduced them, what I learned, and how they shaped the next stage of the homelab.
+Each stage was driven by a problem I wanted to solve, something new I wanted to learn, or a limitation I discovered in the previous design. These short slide pages follow that progression; the [full narrative](../homelab-evolution.md) adds more detail.
 
 ## The Journey
 
@@ -21,3 +15,5 @@ Each era represents another step in that journey, documenting not just the techn
 7. [Moving to Virtualized Infrastructure →](07-proxmox.md)
 8. [Operating Infrastructure →](08-operations.md)
 9. [Local Control, Segmentation, and Automation →](09-local-control.md)
+
+[← HomeLab Portfolio](../../README.md)
