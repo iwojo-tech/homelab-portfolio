@@ -1,4 +1,4 @@
-# Era 5 of 9 — Hosting a Real Workload
+# Era 5 — Hosting a Real Workload
 
 **RuneScape: Dragonwilds · Docker · NAT · Persistent storage**
 
