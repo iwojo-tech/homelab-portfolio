@@ -1,22 +1,25 @@
-# Era 2 of 9 — Learning Managed Networking
+# Era 2 — Learning Managed Networking
 
 **Cisco switching · IOS · SSH · Device hardening**
 
 ## The next problem
-As I began working in networking, I wanted a safe place at home to practice the equipment and concepts I was learning professionally.
+As I began working in networking, I wanted a safe place at home to practice on equipment similar to what I encountered professionally.
 
-I replaced the unmanaged switch with a managed Cisco switch. At first, the goal was to learn the switch itself—not to redesign the whole network or add extensive VLAN segmentation.
+I replaced the unmanaged switch with a managed Cisco switch. The goal at this stage was to work directly with the switch, not to build a fully segmented enterprise network.
 
 ## What changed
-- I used Cisco IOS to inspect and manage the switch.
-- I configured SSH for remote administration.
-- I monitored interfaces and practiced basic device hardening.
+- I used the Cisco CLI to inspect and configure the switch.
+- I enabled SSH for remote administration and practiced device hardening.
+- I monitored interfaces and used the equipment to reinforce troubleshooting habits.
 
-## What I learned
-**Managed switching · Cisco IOS · SSH · Interface management · Troubleshooting**
+## Skills Applied & Developed
+- **Applied and reinforced:** Managed switching, Cisco command-line administration, interface troubleshooting, and secure device access as my professional experience grew.
+- **Expanded:** The freedom to test changes, recover from mistakes, and explore switch behavior independently in a home environment.
+
+> 📷 **Image placeholder:** Photo of the early managed Cisco switch or a sanitized IOS interface/status output.
 
 ## Why the lab grew
-Learning the switch made me curious about the network edge: routing, firewall rules, and how traffic entered and left the home network.
+The switch gave me more visibility into the local network. I wanted to experiment with the network edge next: routing, firewall policy, and NAT.
 
 **Previous:** [Era 1 — Taking Control of DNS](01-dns-filtering.md)  
 **Next:** [Era 3 — Building My Own Network Edge →](03-pfsense.md)

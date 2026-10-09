@@ -1,22 +1,26 @@
-# Era 6 of 9 — Bringing Enterprise Networking Home
+# Era 6 — Bringing Enterprise Networking Home
 
-**FortiGate · Cisco · VLANs · Segmentation**
+**FortiGate 61F · Cisco switching · VLANs · Firewall policy**
 
 ## A more intentional network
-As my professional networking experience grew, I added a FortiGate firewall alongside managed Cisco switching and began applying more enterprise networking concepts to the homelab.
+As my professional networking experience grew, I brought a FortiGate firewall and managed Cisco switching into the homelab.
+
+This was not my first introduction to VLANs, routing, or firewall concepts. It was an opportunity to apply skills I already used professionally to a network I designed, operated, and could experiment with freely.
 
 ## What changed
-I moved from treating the home network as one broad space toward separating systems by role and trust:
-- VLANs, trunks, and access ports
-- Firewall policies and NAT
-- More deliberate IP addressing
-- Separate considerations for management, servers, clients, and IoT
+- I configured VLANs, trunk links, and access ports.
+- I applied firewall policies and NAT to control connectivity.
+- I adopted more deliberate IP addressing and started separating devices and services by role.
+- I could test and troubleshoot changes end to end, from a client or server through the switch and firewall.
 
-## What I learned
-**FortiGate · Cisco networking · VLANs · Network segmentation · Firewall policy · Network design**
+## Skills Applied & Developed
+- **Applied and reinforced:** switching, VLANs, routing, network segmentation, firewall policies, and troubleshooting.
+- **Expanded:** Hands-on FortiGate administration and making design tradeoffs for my own environment rather than following an existing production design.
+
+> 📷 **Image placeholder:** Sanitized network topology showing the FortiGate, Cisco switch, and major network segments.
 
 ## Why the lab grew
-The network was becoming more capable, and the growing number of services called for clearer workload boundaries and more structured storage and recovery.
+The network was becoming more capable, but the number of hosted services called for clearer workload boundaries, storage planning, and recovery options.
 
 **Previous:** [Era 5 — Hosting a Real Workload](05-game-server.md)  
 **Next:** [Era 7 — Moving to Virtualized Infrastructure →](07-proxmox.md)
