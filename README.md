@@ -24,7 +24,7 @@ Each generation of the lab has been driven by one of three things: a problem I w
 
 ### Want the full story?
 
-**[Explore the Evolution of My HomeLab →](docs/homelab-evolution.md)**
+**[Explore the Evolution of My HomeLab →](docs/evolution/README.md)**
 
 Follow the lab from an unmanaged switch and a Pi-hole laptop through managed networking, pfSense, Linux self-hosting, Docker, enterprise networking, Proxmox, and the infrastructure I'm operating today.
 
