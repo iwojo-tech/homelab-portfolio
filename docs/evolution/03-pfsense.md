@@ -1,4 +1,4 @@
-# Era 3 of 9 — Building My Own Network Edge
+# Era 3 — Building My Own Network Edge
 
 **pfSense · Routing · Firewall policy · NAT**
 
