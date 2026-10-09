@@ -2,7 +2,7 @@
 
 My homelab has evolved from a single laptop running Pi-hole into a virtualized and segmented environment for networking, self-hosting, monitoring, automation, and experimentation.
 
-Each stage was driven by a problem I wanted to solve, something new I wanted to learn, or a limitation I discovered in the previous design. These short slide pages follow that progression; the [full narrative](../homelab-evolution.md) adds more detail.
+Each stage was driven by a problem I wanted to solve, something new I wanted to learn, or a limitation I discovered in the previous design. These short slide pages follow that progression.
 
 ## The Journey
 
