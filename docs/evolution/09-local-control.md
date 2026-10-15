@@ -8,8 +8,12 @@ This era is an evolving record of where I want to take the homelab next, not a c
 My priorities include reducing unnecessary cloud dependencies, improving separation between trusted clients and IoT devices, and making everyday management easier.
 
 <p align="center">
-  <img src="../../images/home-assistant-dashboard-mobile.png" alt="Home Assistant homelab management dashboard" width="420">
+  <a href="../../images/homeassistant_dashboard_v2.png">
+    <img src="../../images/homeassistant_dashboard_v2.png" alt="Home Assistant dashboard with Dragonwilds controls, service shortcuts, and UPS monitoring" width="720">
+  </a>
 </p>
+
+<p align="center"><em>The current Home Assistant dashboard combines server controls, service shortcuts, and UPS status.</em></p>
 
 ## What is already in place
 Home Assistant now provides a custom dashboard with server status and uptime, controlled maintenance actions for Dragonwilds, and links to services such as Proxmox, AdGuard Home, Beszel, and external health monitoring.

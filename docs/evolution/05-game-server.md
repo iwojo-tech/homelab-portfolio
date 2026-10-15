@@ -17,6 +17,14 @@ I deployed the Dragonwilds dedicated server in a container and managed its conne
 - **Applied:** Networking, NAT, connectivity troubleshooting, and capacity awareness.
 - **Expanded:** Docker-based game hosting, persistent application data, update procedures, resource monitoring, and maintaining a service for remote users.
 
+<p align="center">
+  <a href="../../images/ChatGPT%20Image%20Oct%207%2C%202026%2C%2010_38_00%20AM.png">
+    <img src="../../images/ChatGPT%20Image%20Oct%207%2C%202026%2C%2010_38_00%20AM.png" alt="Beszel container view showing Dragonwilds CPU, memory, and uptime" width="720">
+  </a>
+</p>
+
+<p align="center"><em>A later Beszel view of the Dragonwilds container, showing the resource use and uptime I track while operating the game server.</em></p>
+
 ## Why the lab grew
 As I hosted more services, I wanted a more deliberate network design and clearer separation between different types of devices and workloads.
 
