@@ -27,7 +27,7 @@ Rather than moving one crowded Ubuntu server onto more powerful hardware, I sepa
 ## Why the lab grew
 Virtualization made the environment easier to organize, but operating several independent systems made monitoring, maintenance, and recovery more important.
 
-**Previous:** [Era 6 — Bringing Enterprise Networking Home](06-enterprise-networking.md)  
+**Previous:** [Era 6 — Hosting a Real Workload](06-game-server.md)  
 **Next:** [Era 8 — Operating Infrastructure →](08-operations.md)
 
 [← Evolution index](README.md)

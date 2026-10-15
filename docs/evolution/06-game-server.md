@@ -1,4 +1,4 @@
-# Era 5 — Hosting a Real Workload
+# Era 6 — Hosting a Real Workload
 
 **RuneScape: Dragonwilds · Docker · NAT · Persistent storage**
 
@@ -17,12 +17,18 @@ I deployed the Dragonwilds dedicated server in a container and managed its conne
 - **Applied:** Networking, NAT, connectivity troubleshooting, and capacity awareness.
 - **Expanded:** Docker-based game hosting, persistent application data, update procedures, resource monitoring, and maintaining a service for remote users.
 
-> 📷 **Image placeholder:** Sanitized Dragonwilds server status output, container metrics, or an in-game screenshot without player identifiers.
+<p align="center">
+  <a href="../../images/ChatGPT%20Image%20Oct%207%2C%202026%2C%2010_38_00%20AM.png">
+    <img src="../../images/ChatGPT%20Image%20Oct%207%2C%202026%2C%2010_38_00%20AM.png" alt="Beszel container view showing Dragonwilds CPU, memory, and uptime" width="720">
+  </a>
+</p>
+
+<p align="center"><em>A later Beszel view of the Dragonwilds container, showing the resource use and uptime I track while operating the game server.</em></p>
 
 ## Why the lab grew
-As I hosted more services, I wanted a more deliberate network design and clearer separation between different types of devices and workloads.
+As I hosted more services, I needed clearer workload boundaries, storage planning, and recovery options. Virtualization was the next step.
 
-**Previous:** [Era 4 — Discovering Self-Hosting](04-self-hosting.md)  
-**Next:** [Era 6 — Bringing Enterprise Networking Home →](06-enterprise-networking.md)
+**Previous:** [Era 5 — Bringing Enterprise Networking Home](05-enterprise-networking.md)  
+**Next:** [Era 7 — Moving to Virtualized Infrastructure →](07-proxmox.md)
 
 [← Evolution index](README.md)

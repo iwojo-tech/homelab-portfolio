@@ -19,12 +19,18 @@ The question shifted from **“What can replace Pi-hole?”** to **“What else 
 - **Applied:** Network services, DNS, IP connectivity, and systematic troubleshooting.
 - **Developed and expanded:** Ubuntu Server administration, Docker Compose, application deployment, persistent data management, and operating multiple services on one host.
 
-> 📷 **Image placeholder:** Sanitized AdGuard Home dashboard or a simple diagram of services hosted on the Ubuntu laptop.
+<p align="center">
+  <a href="../../images/adguardhome-prebeta-redacted.png">
+    <img src="../../images/adguardhome-prebeta-redacted.png" alt="AdGuard Home dashboard with DNS query and filtering statistics" width="600">
+  </a>
+</p>
+
+<p align="center"><em>A later view of AdGuard Home, the DNS filtering service I began self-hosting during this stage.</em></p>
 
 ## Why the lab grew
 Once the server was running several applications, I began thinking more seriously about resource use, uptime, updates, and workloads other people would depend on.
 
 **Previous:** [Era 3 — Building My Own Network Edge](03-pfsense.md)  
-**Next:** [Era 5 — Hosting a Real Workload →](05-game-server.md)
+**Next:** [Era 5 — Bringing Enterprise Networking Home →](05-enterprise-networking.md)
 
 [← Evolution index](README.md)

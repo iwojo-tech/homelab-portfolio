@@ -1,513 +1,74 @@
 # AdGuard Home v1.0 Beta Migration
 
-## Overview
+**AdGuard Home · Debian LXC · Proxmox · DNS · Recovery and validation**
 
-I upgraded my AdGuard Home instance from `v0.107.79` to `v1.0.0-b.1` on a Debian LXC running under Proxmox.
+## Why I made the change
 
-The goal was to test the new AdGuard Home 1.0 beta while preserving the existing DNS configuration, filtering rules, statistics, client history, and administrative settings.
+I upgraded my AdGuard Home instance from `v0.107.79` to `v1.0.0-b.1` to evaluate the new 1.0 beta. The service ran in a Debian LXC under Proxmox and provided DNS filtering for my home network.
 
-Because AdGuard Home provides DNS for the network, I treated the upgrade as a critical infrastructure change and created rollback options before making changes.
+The goal was to move to the new release while retaining the existing DNS configuration, filtering rules, administrator account, and query history. Because other devices depended on this service, recovery was part of the plan from the beginning.
 
----
+## Preparing for recovery
 
-## Dashboard Comparison
+Before making changes, I created a Proxmox snapshot of the container and confirmed the installed version and application location. That snapshot captured the working service and its data together, giving me a way to restore the container if the upgrade failed.
+
+I also made an application-level backup, but stored it inside the application directory. That placement became a problem during the first attempt.
+
+## What went wrong
+
+My first approach used the AdGuard Home installer in reinstall mode to switch to the beta channel. In this attempt, the installer stopped and removed the existing service and application directory before downloading the replacement.
+
+I had launched the installer from inside that same directory. Once it was removed, the download failed with a write error, leaving AdGuard Home unavailable. The backup stored inside the directory was removed as well.
+
+I restored the Proxmox snapshot, then checked the original version, service status, and DNS functionality. The rollback returned the service to its working state.
+
+For the second attempt, I ran the installer from a temporary directory. This avoided the download problem and installed the beta, but the application opened as a fresh installation: the existing configuration was missing, the interface requested a new administrator account, and DNS was not responding.
+
+I rolled back again. Changing the working directory had addressed the first failure, but the reinstall approach still did not preserve the configuration I needed.
+
+## How I completed the upgrade
+
+I changed the scope of the upgrade to replacing only the AdGuard Home executable.
+
+After downloading and checking the beta binary, I stopped the service, replaced the executable in the existing installation, restored its executable permissions, and started the service again. I left the configuration and data directories in place.
+
+This time, the beta loaded the existing configuration and historical data. The narrower change preserved the state that the reinstall attempts had removed.
+
+## How I validated the result
+
+I checked the running version and service status, then tested DNS resolution directly against the server. I also checked that filtering and protection remained enabled and that the configured filter update interval was retained.
+
+In the application, I verified the existing administrator account, DNS settings, blocklists, client statistics, and query history. These checks covered both the DNS service that devices relied on and the configuration and history I wanted to preserve.
+
+## Before and after
 
 <table>
   <tr>
-    <th>Before — AdGuard Home v0.107.79</th>
-    <th>After — AdGuard Home v1.0.0-b.1</th>
+    <th>Before — v0.107.79</th>
+    <th>After — v1.0.0-b.1</th>
   </tr>
   <tr>
-    <td align="center">
-      <img src="../images/adguardhome-prebeta-redacted.png"
-           alt="AdGuard Home dashboard before upgrade on v0.107.79"
-           width="440">
+    <td align="center" valign="top">
+      <a href="../images/adguardhome-prebeta-redacted.png">
+        <img src="../images/adguardhome-prebeta-redacted.png" alt="AdGuard Home dashboard before the beta migration" width="440">
+      </a>
     </td>
-    <td align="center">
-      <img src="../images/adguardhomev1_0-beta-redacted.png"
-           alt="AdGuard Home dashboard after upgrade on v1.0.0-b.1"
-           width="440">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <em>Original v0.107.79 dashboard.</em>
-    </td>
-    <td align="center">
-      <em>New v1.0.0-b.1 dashboard with the existing configuration and history preserved.</em>
+    <td align="center" valign="top">
+      <a href="../images/adguardhomev1_0-beta-redacted.png">
+        <img src="../images/adguardhomev1_0-beta-redacted.png" alt="AdGuard Home beta dashboard after the migration" width="440">
+      </a>
     </td>
   </tr>
 </table>
 
----
+The screenshots show the interface before and after the migration. The displayed totals reflect different observation times; they are not a performance comparison.
 
-## Environment
+## Outcome and lessons
 
-- Proxmox VE
-- Debian LXC
-- AdGuard Home
-- Installation path: `/opt/AdGuardHome`
+The migration finished with AdGuard Home `v1.0.0-b.1` running in the existing container, with DNS functionality restored and the original configuration and historical data retained.
 
----
+The two failed attempts made the recovery plan as important as the upgrade itself. The snapshot provided a working rollback path, while the failures showed why I needed to understand what the installer would replace before using it on a service with persistent state.
 
-## Pre-Upgrade Preparation
+For future changes, I would keep application backups outside any directory the installer might remove, choose an upgrade method that preserves the required data, and validate the underlying service as well as its interface.
 
-Before beginning the upgrade, I created a Proxmox snapshot of the AdGuard Home LXC.
-
-```bash
-sudo pct snapshot 101 pre-adguard-beta \
-  --description "Before AdGuard Home 1.0 beta"
-```
-
-I verified the snapshot:
-
-```bash
-sudo pct listsnapshot 101
-```
-
-Output:
-
-```text
-`-> pre-adguard-beta            2026-10-06 23:12:54     Before AdGuard Home 1.0 beta
- `-> current                                            You are here!
-```
-
-I also confirmed the existing AdGuard Home version:
-
-```bash
-sudo /opt/AdGuardHome/AdGuardHome --version
-```
-
-Output:
-
-```text
-AdGuard Home, version v0.107.79
-```
-
-The existing installation was located at:
-
-```text
-/opt/AdGuardHome
-```
-
-with the primary configuration file at:
-
-```text
-/opt/AdGuardHome/AdGuardHome.yaml
-```
-
----
-
-## Initial Upgrade Attempt
-
-My first attempt used the AdGuard Home installation script to switch the installation to the beta channel.
-
-```bash
-curl -s -S -L \
-  https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh \
-  | sh -s -- -c beta -r -v
-```
-
-The `-r` option tells the installer to reinstall an existing installation.
-
-During the process, the installer stopped and removed the existing AdGuard Home service before downloading the beta release.
-
-The first attempt also failed during the download because the shell was running from inside:
-
-```text
-/opt/AdGuardHome
-```
-
-The reinstall process removed that directory before attempting to save the downloaded archive.
-
-This resulted in:
-
-```text
-curl: (23) client returned ERROR on write
-```
-
-At this point:
-
-- `/opt/AdGuardHome` had been removed
-- the AdGuard Home systemd service no longer existed
-- DNS service was unavailable
-
----
-
-## Recovery Using Proxmox Snapshot
-
-Because the LXC had been snapshotted before the upgrade, I was able to roll the entire container back quickly.
-
-From the Proxmox host:
-
-```bash
-sudo pct rollback 101 pre-adguard-beta
-```
-
-After restarting the container, I verified that the original version and service were restored.
-
-```bash
-sudo /opt/AdGuardHome/AdGuardHome --version
-```
-
-Output:
-
-```text
-AdGuard Home, version v0.107.79
-```
-
-I also verified the service:
-
-```bash
-sudo systemctl status AdGuardHome --no-pager
-```
-
-The AdGuard Home service was active again and DNS functionality was restored.
-
-This confirmed that the Proxmox snapshot provided a clean rollback path.
-
----
-
-## Second Upgrade Attempt
-
-I retried the beta installer from `/tmp` instead of from within the application directory.
-
-```bash
-cd /tmp
-```
-
-I then ran:
-
-```bash
-curl -s -S -L \
-  https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh \
-  | sh -s -- -c beta -r -v
-```
-
-This time the beta installed successfully.
-
-The installed version was:
-
-```bash
-/opt/AdGuardHome/AdGuardHome --version
-```
-
-Output:
-
-```text
-AdGuard Home, version v1.0.0-b.1
-```
-
-However, the new instance started as if it were a fresh installation.
-
-Symptoms included:
-
-- the web interface requested creation of a new administrator account
-- DNS on port 53 was not responding
-- `AdGuardHome.yaml` was missing
-- the previous configuration was not loaded
-
-At this point I determined that using the reinstall process was not appropriate for preserving the existing configuration.
-
----
-
-## Second Rollback
-
-I rolled the LXC back to the same Proxmox snapshot again.
-
-After rollback, the original installation was restored again:
-
-This time I chose a different upgrade method.
-
----
-
-## Successful Upgrade Method
-
-Instead of reinstalling AdGuard Home, I manually downloaded the beta release and replaced only the application binary.
-
-This allowed the existing configuration and application data to remain untouched.
-
-### Download the Beta Release
-
-From inside the AdGuard Home LXC:
-
-```bash
-cd /tmp
-```
-
-Download the beta package:
-
-```bash
-curl -L \
-  https://static.adtidy.org/adguardhome/beta/AdGuardHome_linux_amd64.tar.gz \
-  -o AdGuardHome_linux_amd64.tar.gz
-```
-
-Extract it:
-
-```bash
-tar -xzf AdGuardHome_linux_amd64.tar.gz
-```
-
-Verify the downloaded version before changing the running installation:
-
-```bash
-/tmp/AdGuardHome/AdGuardHome --version
-```
-
-Output:
-
-```text
-AdGuard Home, version v1.0.0-b.1
-```
-
----
-
-## Replace Only the AdGuard Home Binary
-
-Stop the existing service:
-
-```bash
-systemctl stop AdGuardHome
-```
-
-Replace only the executable:
-
-```bash
-cp /tmp/AdGuardHome/AdGuardHome \
-  /opt/AdGuardHome/AdGuardHome
-```
-
-Restore executable permissions:
-
-```bash
-chmod 755 /opt/AdGuardHome/AdGuardHome
-```
-
-Start the service:
-
-```bash
-systemctl start AdGuardHome
-```
-
-The existing configuration files and data directories were intentionally left unchanged.
-
----
-
-## Validation
-
-### Verify the New Version
-
-```bash
-/opt/AdGuardHome/AdGuardHome --version
-```
-
-Output:
-
-```text
-AdGuard Home, version v1.0.0-b.1
-```
-
-### Verify the Service
-
-```bash
-systemctl status AdGuardHome --no-pager
-```
-
-The service started successfully and showed DNS listeners on port 53.
-
-### Verify DNS Resolution
-
-DNS queries were tested directly against the AdGuard Home server:
-
-```bash
-dig @10.104.2.21 google.com
-```
-
-DNS resolution completed successfully.
-
-### Verify Existing Filtering Configuration
-
-I checked several important values in the existing configuration file:
-
-```bash
-grep -nE \
-  'filtering_enabled|protection_enabled|filters_update_interval' \
-  /opt/AdGuardHome/AdGuardHome.yaml
-```
-
-Output:
-
-```text
-184:  filters_update_interval: 24
-186:  filtering_enabled: true
-190:  protection_enabled: true
-```
-
-This confirmed that the original configuration had been retained.
-
----
-
-## Configuration Migration Results
-
-After the binary-only upgrade, AdGuard Home v1.0 beta successfully loaded the existing configuration.
-
-The migrated installation retained:
-
-- existing administrator account
-- DNS configuration
-- filtering settings
-- blocklists
-- historical query data
-- client statistics
-- client identification
-- protection settings
-- previous dashboard statistics
-
-The new v1.0 interface displayed the existing historical data immediately after the upgrade.
-
----
-
-## Dashboard Comparison
-
-<table>
-  <tr>
-    <th>Before — AdGuard Home v0.107.79</th>
-    <th>After — AdGuard Home v1.0.0-b.1</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="../images/adguardhome-prebeta.png"
-           alt="AdGuard Home dashboard before upgrade on v0.107.79"
-           width="440">
-    </td>
-    <td align="center">
-      <img src="../images/adguardhomev1_0-beta.png"
-           alt="AdGuard Home dashboard after upgrade on v1.0.0-b.1"
-           width="440">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <em>Original v0.107.79 dashboard.</em>
-    </td>
-    <td align="center">
-      <em>New v1.0.0-b.1 dashboard with the existing configuration preserved.</em>
-    </td>
-  </tr>
-</table>
----
-
-## Lessons Learned
-
-### Create a Hypervisor-Level Rollback Point
-
-The Proxmox snapshot was the most important protection during this upgrade.
-
-When the first two attempts caused problems, the entire DNS server could be restored quickly without manually rebuilding the application.
-
-### Do Not Store Backups Inside an Application Directory Being Replaced
-
-I initially created an application-level backup inside:
-
-```text
-/opt/AdGuardHome
-```
-
-Because the reinstall process removed that directory, the backup was removed along with it.
-
-Application backups should instead be stored somewhere outside the application directory, such as:
-
-```text
-/root/agh-backup
-```
-
-or on external backup storage.
-
-### Understand What a Reinstall Script Actually Does
-
-The beta installation script with the reinstall option did more than replace the binary.
-
-It removed the existing installation before installing the beta release.
-
-For an application containing important configuration and state, understanding that behavior before running the installer is important.
-
-### Binary Replacement Was the Safer Migration Method
-
-For this upgrade, replacing only the AdGuard Home executable allowed the existing configuration to remain intact.
-
-The process became:
-
-```text
-Download new release
-        ↓
-Verify binary
-        ↓
-Stop service
-        ↓
-Replace executable
-        ↓
-Start service
-        ↓
-Validate DNS
-        ↓
-Validate configuration
-```
-
-This was much less disruptive than reinstalling the entire application.
-
-### Validate the Service, Not Just the Web Interface
-
-After an infrastructure upgrade, confirming that the web interface loads is not enough.
-
-I validated DNS directly using:
-
-```bash
-dig @10.104.2.21 google.com
-```
-
-I also checked the systemd service and configuration file.
-
-This confirmed that the actual network service was functioning, not just the management interface.
-
----
-
-## Final Result
-
-AdGuard Home is now running:
-
-```text
-v1.0.0-b.1
-```
-
-on the existing Debian LXC with the original configuration and historical data successfully preserved.
-
-The Proxmox snapshot will remain temporarily while the beta release is evaluated for stability.
-
----
-
-## Key Takeaway
-
-The most valuable part of this upgrade was not simply installing a newer version.
-
-The process involved:
-
-```text
-Backup
-   ↓
-Upgrade attempt
-   ↓
-Failure
-   ↓
-Diagnosis
-   ↓
-Rollback
-   ↓
-Revised migration strategy
-   ↓
-Upgrade
-   ↓
-Validation
-```
-
-Having a tested rollback path turned what could have been a DNS outage and rebuild into a controlled infrastructure change.
+[← Local Control, Segmentation, and Automation](evolution/09-local-control.md) · [HomeLab Portfolio](../README.md)

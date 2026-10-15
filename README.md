@@ -45,10 +45,10 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
     </td>
     <td align="center" valign="top" width="50%">
       <a href="images/proxmox-server_open.jpg">
-        <img src="images/proxmox-server_open.jpg" alt="Inside the Proxmox server with the case open" width="420">
+        <img src="images/proxmox-server_open.jpg" alt="Proxmox server with the front cover removed" width="420">
       </a>
       <br>
-      <em>A look inside the Proxmox server.</em>
+      <em>The Proxmox server with its front cover removed.</em>
     </td>
   </tr>
 </table>

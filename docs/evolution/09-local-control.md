@@ -8,8 +8,12 @@ This era is an evolving record of where I want to take the homelab next, not a c
 My priorities include reducing unnecessary cloud dependencies, improving separation between trusted clients and IoT devices, and making everyday management easier.
 
 <p align="center">
-  <img src="../../images/home-assistant-dashboard-mobile.png" alt="Home Assistant homelab management dashboard" width="420">
+  <a href="../../images/homeassistant_dashboard_v2.png">
+    <img src="../../images/homeassistant_dashboard_v2.png" alt="Home Assistant dashboard with Dragonwilds controls, service shortcuts, and UPS monitoring" width="720">
+  </a>
 </p>
+
+<p align="center"><em>The current Home Assistant dashboard combines server controls, service shortcuts, and UPS status.</em></p>
 
 ## What is already in place
 Home Assistant now provides a custom dashboard with server status and uptime, controlled maintenance actions for Dragonwilds, and links to services such as Proxmox, AdGuard Home, Beszel, and external health monitoring.
@@ -28,8 +32,6 @@ Home Assistant now provides a custom dashboard with server status and uptime, co
 As the lab evolves, I want to document meaningful changes as focused project notes rather than create a new era for every upgrade.
 
 - [AdGuard Home 1.0 beta upgrade](../adguardHome-1.0%20beta%20upgrade.md) — an example of a smaller change with its own technical write-up.
-
-> 📷 **Image placeholder:** Future sanitized topology showing planned client, server, and IoT network separation.
 
 ## The journey so far
 A repurposed laptop running Pi-hole grew into a platform for networking, Linux, self-hosting, virtualization, monitoring, and automation. Some projects taught me new technologies; others gave me a place to apply and strengthen skills from my professional work.
