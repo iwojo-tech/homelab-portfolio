@@ -16,8 +16,6 @@ I replaced the unmanaged switch with a managed Cisco switch. The goal at this st
 - **Applied and reinforced:** Managed switching, Cisco command-line administration, interface troubleshooting, and secure device access as my professional experience grew.
 - **Expanded:** The freedom to test changes, recover from mistakes, and explore switch behavior independently in a home environment.
 
-> 📷 **Image placeholder:** Photo of the early managed Cisco switch or a sanitized IOS interface/status output.
-
 ## Why the lab grew
 The switch gave me more visibility into the local network. I wanted to experiment with the network edge next: routing, firewall policy, and NAT.
 

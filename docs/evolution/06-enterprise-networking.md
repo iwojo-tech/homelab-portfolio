@@ -17,8 +17,6 @@ This was not my first introduction to VLANs, routing, or firewall concepts. It w
 - **Applied and reinforced:** switching, VLANs, routing, network segmentation, firewall policies, and troubleshooting.
 - **Expanded:** Hands-on FortiGate administration and making design tradeoffs for my own environment rather than following an existing production design.
 
-> 📷 **Image placeholder:** Sanitized network topology showing the FortiGate, Cisco switch, and major network segments.
-
 ## Why the lab grew
 The network was becoming more capable, but the number of hosted services called for clearer workload boundaries, storage planning, and recovery options.
 

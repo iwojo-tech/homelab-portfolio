@@ -16,8 +16,6 @@ DNS itself was not a new concept to me. I already worked with enterprise network
 - **Applied:** DNS fundamentals, IP networking, and network troubleshooting from my professional background.
 - **Developed:** Linux host administration, Pi-hole deployment, DNS filtering configuration, and ongoing service maintenance.
 
-> 📷 **Image placeholder:** Early Pi-hole dashboard or a photo of the repurposed laptop.
-
 ## Why the lab grew
 Running Pi-hole made me want a more capable way to observe and administer the network around it. A managed switch was the next step.
 

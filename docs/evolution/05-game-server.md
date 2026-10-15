@@ -17,8 +17,6 @@ I deployed the Dragonwilds dedicated server in a container and managed its conne
 - **Applied:** Networking, NAT, connectivity troubleshooting, and capacity awareness.
 - **Expanded:** Docker-based game hosting, persistent application data, update procedures, resource monitoring, and maintaining a service for remote users.
 
-> 📷 **Image placeholder:** Sanitized Dragonwilds server status output, container metrics, or an in-game screenshot without player identifiers.
-
 ## Why the lab grew
 As I hosted more services, I wanted a more deliberate network design and clearer separation between different types of devices and workloads.
 

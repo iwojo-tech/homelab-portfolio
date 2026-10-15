@@ -23,8 +23,6 @@ I also wanted to be able to check the lab and take quick maintenance actions whe
 - **Applied:** Operational troubleshooting, secure remote access concepts, Linux administration, and service monitoring.
 - **Expanded:** Centralized homelab monitoring, external heartbeat checks, Tailscale subnet routing, SSH-based maintenance workflows, scripting, backup scheduling, and recovery planning.
 
-> 📷 **Image placeholder:** Sanitized Home Assistant maintenance controls or OmnySSH command-output view.
-
 ## Why the lab grew
 Once I could see system health and perform maintenance more easily, I started focusing on bringing more local control and automation into the same environment.
 

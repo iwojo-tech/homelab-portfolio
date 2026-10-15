@@ -19,8 +19,6 @@ The question shifted from **“What can replace Pi-hole?”** to **“What else 
 - **Applied:** Network services, DNS, IP connectivity, and systematic troubleshooting.
 - **Developed and expanded:** Ubuntu Server administration, Docker Compose, application deployment, persistent data management, and operating multiple services on one host.
 
-> 📷 **Image placeholder:** Sanitized AdGuard Home dashboard or a simple diagram of services hosted on the Ubuntu laptop.
-
 ## Why the lab grew
 Once the server was running several applications, I began thinking more seriously about resource use, uptime, updates, and workloads other people would depend on.
 

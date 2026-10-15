@@ -29,8 +29,6 @@ As the lab evolves, I want to document meaningful changes as focused project not
 
 - [AdGuard Home 1.0 beta upgrade](../adguardHome-1.0%20beta%20upgrade.md) — an example of a smaller change with its own technical write-up.
 
-> 📷 **Image placeholder:** Future sanitized topology showing planned client, server, and IoT network separation.
-
 ## The journey so far
 A repurposed laptop running Pi-hole grew into a platform for networking, Linux, self-hosting, virtualization, monitoring, and automation. Some projects taught me new technologies; others gave me a place to apply and strengthen skills from my professional work.
 

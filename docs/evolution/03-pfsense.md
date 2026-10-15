@@ -18,8 +18,6 @@ I could now configure and troubleshoot the systems that directed and controlled 
 - **Applied:** Existing routing, IP addressing, network security, and troubleshooting knowledge.
 - **Expanded:** Hands-on pfSense configuration, firewall rule management, DHCP, and NAT on personally managed hardware.
 
-> 📷 **Image placeholder:** Sanitized pfSense dashboard or a simple diagram of the laptop firewall at the network edge.
-
 ## Why the lab grew
 With greater control of the network, I started looking for additional services I could host and maintain myself.
 
