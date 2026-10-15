@@ -158,8 +158,6 @@ Clearing a failed state does not repair USB communication or start a service. It
 
 <p align="center"><em>The Home Assistant UPS dashboard after recovery, showing live status and telemetry alongside the runtime-based shutdown threshold and history.</em></p>
 
-The screenshot captures one observation: utility power, 100% battery capacity, an estimated 11 minutes of runtime, 72% load, and 119 V input. These values vary with operating conditions; the history graph alone does not establish the cause of the earlier battery dip or validate an automatic shutdown.
-
 ## Outcome and lessons
 
 I recovered stable **Normal** status and live UPS telemetry through PowerPanel after removing the competing NUT driver and reconnecting USB cleanly. Home Assistant remained the dashboard and notification layer.
