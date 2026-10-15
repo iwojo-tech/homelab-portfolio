@@ -35,6 +35,8 @@ As I make improvements during this era, I document each project on its own page:
 - [Dragonwilds maintenance automation](../dragonwilds-maintenance-automation.md) — how a simple SSH restart button grew into a remote maintenance workflow with backups, progress reporting, and application readiness checks.
 - [AdGuard Home 1.0 beta upgrade](../adguardHome-1.0%20beta%20upgrade.md) — recovering from failed reinstall attempts and completing an upgrade while preserving configuration and history.
 
+- [CyberPower UPS monitoring recovery](../cyberpower-ups-monitoring-recovery.md) — restoring PowerPanel telemetry after USB HID failures and finding the competing NUT driver that kept restarting.
+
 ## The journey so far
 A repurposed laptop running Pi-hole grew into a platform for networking, Linux, self-hosting, virtualization, monitoring, and automation. Some projects taught me new technologies; others gave me a place to apply and strengthen skills from my professional work.
 
