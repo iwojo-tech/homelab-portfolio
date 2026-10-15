@@ -65,11 +65,11 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
       <em>My custom Home Assistant dashboard centralizes server management, monitoring, and access to core homelab services.</em>
     </td>
     <td align="center" valign="top" width="50%">
-      <a href="images/ProxmoxDashboard.png">
-        <img src="images/ProxmoxDashboard.png" alt="Proxmox virtualization dashboard" width="420">
+      <a href="images/beszeldashboard.png">
+        <img src="images/beszeldashboard.png" alt="Beszel homelab monitoring dashboard" width="420">
       </a>
       <br>
-      <em>The Proxmox dashboard provides a view of the lab's virtualization environment.</em>
+      <em>The Beszel dashboard brings homelab system monitoring into one view.</em>
     </td>
   </tr>
 </table>
