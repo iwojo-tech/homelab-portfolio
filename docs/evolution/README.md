@@ -18,4 +18,8 @@ Some skills were new to me; others came from my professional networking experien
 8. [Operating Infrastructure →](08-operations.md)
 9. [Local Control, Segmentation, and Automation →](09-local-control.md)
 
+## Project Notes
+
+- [CyberPower UPS monitoring recovery](../cyberpower-ups-monitoring-recovery.md) — recovering PowerPanel telemetry after USB HID failures and a competing NUT driver.
+
 [← HomeLab Portfolio](../../README.md)
