@@ -31,6 +31,6 @@ The question shifted from **“What can replace Pi-hole?”** to **“What else 
 Once the server was running several applications, I began thinking more seriously about resource use, uptime, updates, and workloads other people would depend on.
 
 **Previous:** [Era 3 — Building My Own Network Edge](03-pfsense.md)  
-**Next:** [Era 5 — Hosting a Real Workload →](05-game-server.md)
+**Next:** [Era 5 — Bringing Enterprise Networking Home →](05-enterprise-networking.md)
 
 [← Evolution index](README.md)

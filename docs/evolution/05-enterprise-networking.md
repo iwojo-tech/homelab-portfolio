@@ -1,4 +1,4 @@
-# Era 6 — Bringing Enterprise Networking Home
+# Era 5 — Bringing Enterprise Networking Home
 
 **FortiGate 61F · Cisco switching · VLANs · Firewall policy**
 
@@ -26,9 +26,9 @@ This was not my first introduction to VLANs, routing, or firewall concepts. It w
 <p align="center"><em>The current network stack, including the FortiGate firewall discussed in this stage.</em></p>
 
 ## Why the lab grew
-The network was becoming more capable, but the number of hosted services called for clearer workload boundaries, storage planning, and recovery options.
+With a more deliberate network in place, I continued expanding the services I hosted. Running a game server gave that infrastructure a workload another person depended on.
 
-**Previous:** [Era 5 — Hosting a Real Workload](05-game-server.md)  
-**Next:** [Era 7 — Moving to Virtualized Infrastructure →](07-proxmox.md)
+**Previous:** [Era 4 — Discovering Self-Hosting](04-self-hosting.md)  
+**Next:** [Era 6 — Hosting a Real Workload →](06-game-server.md)
 
 [← Evolution index](README.md)
