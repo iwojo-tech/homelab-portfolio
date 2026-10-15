@@ -32,15 +32,44 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
 
 ## Current Environment
 
-<p align="center">
-  <img src="images/home-assistant-dashboard-mobile.png"
-       alt="Home Assistant homelab management dashboard"
-       width="500">
-</p>
+### Inside the Lab
 
-<p align="center">
-  <em>
-    A custom Home Assistant dashboard I built to centralize server management,
-    monitoring, and access to core homelab services.
-  </em>
-</p>
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="images/lab%20stack.jpg">
+        <img src="images/lab%20stack.jpg" alt="Physical homelab equipment stack" width="420">
+      </a>
+      <br>
+      <em>The physical lab stack.</em>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="images/proxmox-server_open.jpg">
+        <img src="images/proxmox-server_open.jpg" alt="Inside the Proxmox server with the case open" width="420">
+      </a>
+      <br>
+      <em>A look inside the Proxmox server.</em>
+    </td>
+  </tr>
+</table>
+
+### Dashboards
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="images/home-assistant-dashboard.png">
+        <img src="images/home-assistant-dashboard.png" alt="Home Assistant homelab management dashboard" width="420">
+      </a>
+      <br>
+      <em>My custom Home Assistant dashboard centralizes server management, monitoring, and access to core homelab services.</em>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="images/ProxmoxDashboard.png">
+        <img src="images/ProxmoxDashboard.png" alt="Proxmox virtualization dashboard" width="420">
+      </a>
+      <br>
+      <em>The Proxmox dashboard provides a view of the lab's virtualization environment.</em>
+    </td>
+  </tr>
+</table>
