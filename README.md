@@ -1,6 +1,6 @@
-# HomeLab Portfolio
+# Isaiah Wojciechowski
 
-## Welcome!
+## Home Lab
 
 My name is Isaiah, and I have both a professional and personal passion for information technology. That passion has led me to design, build, and continually improve my own home network and server environment as a place to learn, experiment, and solve real problems.
 
