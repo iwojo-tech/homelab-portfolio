@@ -1,6 +1,6 @@
-# Isaiah Wojciechowski
+# Isaiah Wojciechowski's Home Lab
 
-## Home Lab
+## Welcome
 
 I have both a professional and personal passion for information technology. That passion has led me to design, build, and continually improve my own home network and server environment as a place to learn, experiment, and solve real problems.
 
