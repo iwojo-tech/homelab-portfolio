@@ -71,4 +71,4 @@ The two failed attempts made the recovery plan as important as the upgrade itsel
 
 For future changes, I would keep application backups outside any directory the installer might remove, choose an upgrade method that preserves the required data, and validate the underlying service as well as its interface.
 
-[← Local Control, Segmentation, and Automation](evolution/09-local-control.md) · [HomeLab Portfolio](../README.md)
+[← Local Control, Segmentation, and Automation](evolution/09-local-control.md) · [Home Lab Portfolio](../README.md)

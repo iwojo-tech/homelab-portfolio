@@ -4,7 +4,7 @@
 
 ## Why I built it
 
-Hosting a private RuneScape: Dragonwilds server gave my homelab a workload that someone else depended on. A friend and I used the server, so maintenance affected both availability and the world we had built together.
+Hosting a private RuneScape: Dragonwilds server gave my home lab a workload that someone else depended on. A friend and I used the server, so maintenance affected both availability and the world we had built together.
 
 A major reason for building these controls was to run maintenance and upgrade commands remotely, including when I was away from home. I wanted to check the server, restart it, or begin an update without having to wait until I was back home.
 
@@ -24,11 +24,11 @@ The dashboard provided a convenient place to request an action and see server in
 
 <p align="center">
   <a href="../images/homeassistant_dashboard_v2.png">
-    <img src="../images/homeassistant_dashboard_v2.png" alt="Home Assistant dashboard with Dragonwilds controls and homelab service shortcuts" width="720">
+    <img src="../images/homeassistant_dashboard_v2.png" alt="Home Assistant dashboard with Dragonwilds controls and home lab service shortcuts" width="720">
   </a>
 </p>
 
-<p align="center"><em>The dashboard brings Dragonwilds controls and server information into the same place as the rest of my homelab.</em></p>
+<p align="center"><em>The dashboard brings Dragonwilds controls and server information into the same place as the rest of my home lab.</em></p>
 
 The container update script, `/usr/local/sbin/dragonwildsCT-update`, runs inside the Dragonwilds VM, identified as VM 200 in Proxmox. Despite the `CT` in the script name, this operation updates the Docker workload inside the VM.
 
@@ -104,4 +104,4 @@ The recovery function attempts to bring the service back up, but it does not gua
 
 For future improvements, I want to test failure paths as deliberately as the successful path: unreadable logs, failed backups, interrupted monitoring, and restoration from an archive. Building these controls has been useful practice in Bash, log analysis, Docker administration, and documenting the evidence behind an operational decision.
 
-[← Local Control, Segmentation, and Automation](evolution/09-local-control.md) · [HomeLab Portfolio](../README.md)
+[← Local Control, Segmentation, and Automation](evolution/09-local-control.md) · [Home Lab Portfolio](../README.md)

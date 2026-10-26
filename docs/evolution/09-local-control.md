@@ -3,7 +3,7 @@
 **Home Assistant · IoT · Local-first design · Future improvements**
 
 ## The current phase
-This era is an evolving record of where I want to take the homelab next, not a claim that every planned improvement has already been implemented.
+This era is an evolving record of where I want to take the home lab next, not a claim that every planned improvement has already been implemented.
 
 My priorities include reducing unnecessary cloud dependencies, improving separation between trusted clients and IoT devices, and making everyday management easier.
 

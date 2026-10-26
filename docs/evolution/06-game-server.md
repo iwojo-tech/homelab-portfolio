@@ -8,7 +8,7 @@ A friend and I wanted a persistent private game server. I started with a paid ho
 I deployed the Dragonwilds dedicated server in a container and managed its connectivity, persistent data, resource use, and updates.
 
 ## What changed
-- The homelab now ran a service another person actively used.
+- The home lab now ran a service another person actively used.
 - Port forwarding and NAT had a practical purpose: allowing a friend to connect remotely.
 - Updates, backups, and troubleshooting had to account for players' progress and server availability.
 - I began paying closer attention to CPU, memory, and the difference between a process starting and a game server actually being ready.
