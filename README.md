@@ -4,9 +4,9 @@
 
 I have both a professional and personal passion for information technology. That passion has led me to design, build, and continually improve my own home network and server environment as a place to learn, experiment, and solve real problems.
 
-As a full-time Network Engineer, husband, father, and National Guardsman, I choose to spend some of my valuable free time learning, experimenting, and building this homelab because I genuinely enjoy working with technology and value the opportunity to develop my skills outside of work.
+As a full-time Network Engineer, husband, father, and National Guardsman, I choose to spend some of limited free time learning, experimenting, and building this homelab because I genuinely enjoy working with technology and value the opportunity to develop my skills outside of work.
 
-Along the way, I've gained hands-on experience with networking, Linux administration, virtualization, firewalls, containers, monitoring, automation, and self-hosted services. This portfolio documents that journey, not just the technologies I've used, but the problems I was trying to solve, the decisions I made, and how the environment has evolved as my skills have grown.
+Along the way, I've gained hands-on experience with networking, Linux administration, virtualization, firewalls, containers, monitoring, automation, and self-hosted services. This portfolio documents that journey, not just the technologies I've used, but the problems I've identified, the decisions I've made, and how the solutions and environment has evolved as my skills have grown.
 
 ---
 
