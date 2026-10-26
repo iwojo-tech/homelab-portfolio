@@ -3,7 +3,7 @@
 **FortiGate 61F · Cisco switching · VLANs · Firewall policy**
 
 ## A more intentional network
-As my professional networking experience grew, I brought a FortiGate firewall and managed Cisco switching into the homelab.
+As my professional networking experience grew, I brought a FortiGate firewall and managed Cisco switching into the home lab.
 
 This was not my first introduction to VLANs, routing, or firewall concepts. It was an opportunity to apply skills I already used professionally to a network I designed, operated, and could experiment with freely.
 
@@ -19,7 +19,7 @@ This was not my first introduction to VLANs, routing, or firewall concepts. It w
 
 <p align="center">
   <a href="../../images/lab%20stack.jpg">
-    <img src="../../images/lab%20stack.jpg" alt="Current homelab network equipment including the FortiGate firewall" width="480">
+    <img src="../../images/lab%20stack.jpg" alt="Current home lab network equipment including the FortiGate firewall" width="480">
   </a>
 </p>
 

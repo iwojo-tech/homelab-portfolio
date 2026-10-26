@@ -4,7 +4,7 @@
 
 ## Why I added UPS monitoring
 
-I wanted the homelab to recognize a power outage, show useful battery information, and give me warning before Proxmox needed to shut down. I initially had CyberPower PowerPanel Linux 1.4.2 working with my AVRG900LCD over USB. PowerPanel's `pwrstatd` daemon supplied the monitoring on the Proxmox host, while Home Assistant provided the UPS dashboard and notifications.
+I wanted the home lab to recognize a power outage, show useful battery information, and give me warning before Proxmox needed to shut down. I initially had CyberPower PowerPanel Linux 1.4.2 working with my AVRG900LCD over USB. PowerPanel's `pwrstatd` daemon supplied the monitoring on the Proxmox host, while Home Assistant provided the UPS dashboard and notifications.
 
 That first working setup established that the UPS could provide live telemetry. The harder part was getting back to that state after a reboot during kernel work left monitoring broken.
 
@@ -171,4 +171,4 @@ The most useful lessons were:
 - **Keep changes attributable.** Port changes, a hub, a UPS restart, and a kernel upgrade were useful experiments, but none justified a hardware or kernel root-cause claim on its own.
 - **Validate after reboot.** The original installation worked before a reboot exposed the problem. Another reboot check and a controlled outage/shutdown test remain useful follow-up validation; restored telemetry alone does not establish either result.
 
-[← Evolution index](evolution/README.md) · [HomeLab Portfolio](../README.md)
+[← Evolution index](evolution/README.md) · [Home Lab Portfolio](../README.md)

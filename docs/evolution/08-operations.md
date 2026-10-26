@@ -21,11 +21,11 @@ I also wanted to be able to check the lab and take quick maintenance actions whe
 
 ## Skills Applied & Developed
 - **Applied:** Operational troubleshooting, secure remote access concepts, Linux administration, and service monitoring.
-- **Expanded:** Centralized homelab monitoring, external heartbeat checks, Tailscale subnet routing, SSH-based maintenance workflows, scripting, backup scheduling, and recovery planning.
+- **Expanded:** Centralized home lab monitoring, external heartbeat checks, Tailscale subnet routing, SSH-based maintenance workflows, scripting, backup scheduling, and recovery planning.
 
 <p align="center">
   <a href="../../images/omnySSH-dashboard.png">
-    <img src="../../images/omnySSH-dashboard.png" alt="OmnySSH dashboard showing homelab hosts, connectivity, and resource use" width="720">
+    <img src="../../images/omnySSH-dashboard.png" alt="OmnySSH dashboard showing home lab hosts, connectivity, and resource use" width="720">
   </a>
 </p>
 

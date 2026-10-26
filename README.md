@@ -4,7 +4,7 @@
 
 I have both a professional and personal passion for information technology. That passion has led me to design, build, and continually improve my own home network and server environment as a place to learn, experiment, and solve real problems.
 
-As a full-time Network Engineer, husband, father, and National Guardsman, I choose to spend some of limited free time learning, experimenting, and building this homelab because I genuinely enjoy working with technology and value the opportunity to develop my skills outside of work.
+As a full-time Network Engineer, husband, father, and National Guardsman, I choose to spend some of limited free time learning, experimenting, and building this home lab because I genuinely enjoy working with technology and value the opportunity to develop my skills outside of work.
 
 Along the way, I've gained hands-on experience with networking, Linux administration, virtualization, firewalls, containers, monitoring, automation, and self-hosted services. This portfolio documents that journey, not just the technologies I've used, but the problems I've identified, the decisions I've made, and how the solutions and environment has evolved as my skills have grown.
 
@@ -12,7 +12,7 @@ Along the way, I've gained hands-on experience with networking, Linux administra
 
 ## From Blocking Ads to Building Infrastructure
 
-My homelab didn't begin as an attempt to build an enterprise environment.
+My home lab didn't begin as an attempt to build an enterprise environment.
 
 It started with a simple problem: like many people, I was tired of seeing ads everywhere, especially on my children's devices. I wanted a way to block ads across my entire home network without relying entirely on cloud-based services.
 
@@ -24,7 +24,7 @@ Each generation of the lab has been driven by one of three things: a problem I w
 
 ### Want the full story?
 
-**[Explore the Evolution of My HomeLab →](docs/evolution/README.md)**
+**[Explore the Evolution of My Home Lab →](docs/evolution/README.md)**
 
 Follow the lab from an unmanaged switch and a Pi-hole laptop through managed networking, pfSense, Linux self-hosting, Docker, enterprise networking, Proxmox, and the infrastructure I'm operating today.
 
@@ -38,7 +38,7 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
   <tr>
     <td align="center" valign="top" width="50%">
       <a href="images/lab%20stack.jpg">
-        <img src="images/lab%20stack.jpg" alt="Physical homelab equipment stack" width="420">
+        <img src="images/lab%20stack.jpg" alt="Physical home lab equipment stack" width="420">
       </a>
       <br>
       <em>The physical lab stack.</em>
@@ -59,17 +59,17 @@ Follow the lab from an unmanaged switch and a Pi-hole laptop through managed net
   <tr>
     <td align="center" valign="top" width="50%">
       <a href="images/home-assistant-dashboard.png">
-        <img src="images/home-assistant-dashboard.png" alt="Home Assistant homelab management dashboard" width="420">
+        <img src="images/home-assistant-dashboard.png" alt="Home Assistant home lab management dashboard" width="420">
       </a>
       <br>
-      <em>My custom Home Assistant dashboard centralizes server management, monitoring, and access to core homelab services.</em>
+      <em>My custom Home Assistant dashboard centralizes server management, monitoring, and access to core home lab services.</em>
     </td>
     <td align="center" valign="top" width="50%">
       <a href="images/beszeldashboard.png">
-        <img src="images/beszeldashboard.png" alt="Beszel homelab monitoring dashboard" width="420">
+        <img src="images/beszeldashboard.png" alt="Beszel home lab monitoring dashboard" width="420">
       </a>
       <br>
-      <em>The Beszel dashboard brings homelab system monitoring into one view.</em>
+      <em>The Beszel dashboard brings home lab system monitoring into one view.</em>
     </td>
   </tr>
 </table>

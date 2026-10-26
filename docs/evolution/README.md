@@ -1,6 +1,6 @@
-# Homelab Evolution
+# Home Lab Evolution
 
-My homelab has evolved from a single laptop running Pi-hole into a virtualized and segmented environment for networking, self-hosting, monitoring, automation, and experimentation.
+My home lab has evolved from a single laptop running Pi-hole into a virtualized and segmented environment for networking, self-hosting, monitoring, automation, and experimentation.
 
 Each stage was driven by a problem I wanted to solve, something new I wanted to explore, or a limitation I discovered in the previous design. These era pages are the **complete story of each stage**, not summaries of a separate document.
 
@@ -22,4 +22,4 @@ Some skills were new to me; others came from my professional networking experien
 
 - [CyberPower UPS monitoring recovery](../cyberpower-ups-monitoring-recovery.md) — recovering PowerPanel telemetry after USB HID failures and a competing NUT driver.
 
-[← HomeLab Portfolio](../../README.md)
+[← Home Lab Portfolio](../../README.md)
